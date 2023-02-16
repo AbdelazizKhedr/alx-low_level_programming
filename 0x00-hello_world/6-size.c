@@ -1,5 +1,9 @@
 #include <stdio.h>
-
+/**
+ * main - Entry Point
+ *
+ * Return: 0 is success
+ */
 int main(void)
 {
 	char Zcharacter;
