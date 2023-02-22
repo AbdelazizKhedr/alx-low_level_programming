@@ -22,7 +22,9 @@ void print_int(int n)
  */
 void jack_bauer(void)
 {
-	for (int i = 0; i < 1440; i++)
+	int i;
+
+	for (i = 0; i < 1440; i++)
 	{
 		int x, y;
 
