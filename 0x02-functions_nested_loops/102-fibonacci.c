@@ -11,7 +11,7 @@ int main(void)
 	for (i = 0; i < 50; i++)
 	{
 		fib = a + b;
-		a = b, b = f;
+		a = b, b = fib;
 		if (i < 49)
 			printf("%lu, ", fib);
 		else
