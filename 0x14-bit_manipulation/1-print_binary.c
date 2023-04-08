@@ -6,17 +6,17 @@
  */
 void print_binary(unsigned long int n)
 {
-	unsigned int bits;
-	char first = 1;
+	unsigned int bit;
+	char fst = 1;
 
-	for (bits = sizeof(n) * 8; bits > 0; bits--)
+	for (bit = sizeof(n) * 8; bit > 0; bit--)
 	{
-		char bit = (n >> (bits - 1)) & 0x01;
+		char bit2 = (n >> (bit - 1)) & 0x01;
 
-		if (bit || (!bit && !first) || !n)
+		if (bit2 || (!bit2 && !fst) || !n)
 		{
-			first = 0;
-			_putchar(bit + '0');
+			fst = 0;
+			_putchar(bit2 + '0');
 		}
 		if (!n)
 			break;
