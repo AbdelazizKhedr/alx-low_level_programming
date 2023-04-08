@@ -4,7 +4,6 @@
  * @n: uns long integer to be converted
  * Return: No returns.
  */
-
 void print_binary(unsigned long int n)
 {
 	unsigned int bits;
