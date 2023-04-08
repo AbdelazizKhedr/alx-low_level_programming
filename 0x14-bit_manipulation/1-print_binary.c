@@ -6,15 +6,19 @@
 
 void print_binary(unsigned long int n)
 {
-	int i, zx;
+	unsigned int bit;
+	char f = 1;
 
-	if (n == 0)
-		_putchar('0');
-	for (zx = 0, i = sizeof(n) * 8 - 1; i >= 0; i--)
+	for (bit = sizeof(n) * 8; bit > 0; bit--)
 	{
-		if ((n >> i) & 1)
-			zx = 1;
-		if (zx == 1)
-			((n >> i) & 1) ? _putchar('1') : _putchar('0');
+		char bit2 = (n >> (bit - 1)) & 0x01;
+
+		if (bit2 || (!bit2 && !f) || !n)
+		{
+			f = 0;
+			_putchar(bit2 + '0');
+		}
+		if (!n)
+			break;
 	}
 }
