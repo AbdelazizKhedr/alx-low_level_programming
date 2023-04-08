@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- * print_binary - prints the binary represent
+ * print_binary - prints the bin represent
  * of any given number.
- * @n: unsigned long int to be converted.
+ * @n: unsigned long int to be
+ * converted
  * Return: No returns.
  */
 void print_binary(unsigned long int n)
