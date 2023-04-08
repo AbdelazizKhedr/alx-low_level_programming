@@ -1,7 +1,8 @@
 #include "main.h"
 /**
  * print_binary - print the binary repres of a given number
- * @n: integer to be converted
+ * @n: uns long integer to be converted
+ * Return: No returns.
  */
 
 void print_binary(unsigned long int n)
